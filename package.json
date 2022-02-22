@@ -1,8 +1,8 @@
 {
-    "name": "casper",
-    "description": "A clean, minimal default theme for the Ghost publishing platform",
-    "demo": "https://demo.ghost.io",
-    "version": "4.7.2",
+    "name": "rockfishing-ghost",
+    "description": "A clean, minimal default theme for the Ghost publishing platform, but with translation support!",
+    "demo": "https://rockfishing.es",
+    "version": "4.7.2-0",
     "engines": {
         "ghost": ">=4.0.0",
         "ghost-api": "v4"
@@ -41,10 +41,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Casper.git"
+        "url": "https://github.com/membrive/rockfishing-ghost"
     },
-    "bugs": "https://github.com/TryGhost/Casper/issues",
-    "contributors": "https://github.com/TryGhost/Casper/graphs/contributors",
+    "bugs": "https://github.com/membrive/rockfishing-ghost/issues",
+    "contributors": "https://github.com/membrive/rockfishing-ghost/graphs/contributors",
     "devDependencies": {
         "@tryghost/release-utils": "0.6.12",
         "autoprefixer": "10.2.5",

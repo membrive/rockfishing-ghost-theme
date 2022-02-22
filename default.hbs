@@ -3,7 +3,7 @@
 <head>
 
     {{!-- Basic meta - advanced meta is output with {ghost_head} below --}}
-    <title>{{meta_title}}</title>
+    <title>{{meta_title page=(t "Page %")}}</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="HandheldFriendly" content="True" />
@@ -52,6 +52,9 @@
             </div>
             <div class="gh-head-actions">
                 <div class="gh-social">
+                    {{#if @custom.instagram_url}}
+                        <a class="gh-social-instagram" href="{{@custom.instagram_url}}" title="Instagram" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
+                    {{/if}}
                     {{#if @site.facebook}}
                         <a class="gh-social-facebook" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
                     {{/if}}
@@ -61,9 +64,9 @@
                 </div>
 
                 {{#unless @member}}
-                    <a class="gh-head-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                    <a class="gh-head-button" href="#/portal/signup" data-portal="signup">{{t "Subscribe"}}</a>
                 {{else}}
-                    <a class="gh-head-button" href="#/portal/account" data-portal="account">Account</a>
+                    <a class="gh-head-button" href="#/portal/account" data-portal="account">{{t "Account"}}</a>
                 {{/unless}}
             </div>
         </nav>
@@ -81,7 +84,9 @@
             <nav class="site-footer-nav">
                 {{navigation type="secondary"}}
             </nav>
-            <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+            <div>
+                <a href="https://ghost.org/" target="_blank" rel="noopener">{{t "Powered by Ghost"}}</a>
+            </div>
         </div>
     </footer>
 
