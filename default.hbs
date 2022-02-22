@@ -85,7 +85,17 @@
                 {{navigation type="secondary"}}
             </nav>
             <div>
-                <a href="https://ghost.org/" target="_blank" rel="noopener">{{t "Powered by Ghost"}}</a>
+                <div class="gh-social">
+                    {{#if @custom.instagram_url}}
+                        <a class="gh-social-instagram" href="{{@custom.instagram_url}}" title="Instagram" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
+                    {{/if}}
+                    {{#if @site.facebook}}
+                        <a class="gh-social-facebook" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+                    {{/if}}
+                    {{#if @site.twitter}}
+                        <a class="gh-social-twitter" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+                    {{/if}}
+                </div>
             </div>
         </div>
     </footer>
