@@ -2,7 +2,7 @@
     "name": "rockfishing-ghost",
     "description": "A clean, minimal default theme for the Ghost publishing platform, but with translation support!",
     "demo": "https://rockfishing.es",
-    "version": "4.7.2-1",
+    "version": "4.7.3-0",
     "engines": {
         "ghost": ">=4.0.0",
         "ghost-api": "v4"
