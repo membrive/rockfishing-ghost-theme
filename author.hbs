@@ -52,6 +52,9 @@
                     {{#if facebook}}
                         <a class="author-profile-social-link" href="{{facebook_url}}" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
                     {{/if}}
+                    {{#if @custom.instagram_url}}
+                        <a class="author-profile-social-link" href="{{@custom.instagram_url}}" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
+                    {{/if}}
                 </div>
             </footer>
 
