@@ -76,19 +76,17 @@
             <nav class="site-footer-nav">
                 {{navigation type="secondary"}}
             </nav>
-            <div>
-                <div class="gh-social">
-                    {{#if @custom.instagram_url}}
-                        <a class="gh-social-link gh-social-instagram" href="{{@custom.instagram_url}}" title="Instagram" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
-                    {{/if}}
-                    {{#if @site.facebook}}
-                        <a class="gh-social-link gh-social-facebook" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
-                    {{/if}}
-                    {{#if @site.twitter}}
-                        <a class="gh-social-link gh-social-twitter" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
-                    {{/if}}
-                </div>
-            </div>
+            <section style="word-spacing:10px;">
+                {{#if @custom.instagram_url}}
+                    <a class="gh-social-link gh-social-instagram" href="{{@custom.instagram_url}}" title="Instagram" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
+                {{/if}}
+                {{#if @site.facebook}}
+                    <a class="gh-social-link gh-social-facebook" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+                {{/if}}
+                {{#if @site.twitter}}
+                    <a class="gh-social-link gh-social-twitter" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+                {{/if}}
+            </section>
         </div>
     </footer>
 
